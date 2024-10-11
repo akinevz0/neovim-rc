@@ -11,8 +11,10 @@ return {
   },
   opts = {
     workspaces = {
-      name = "Documents Vault",
-      path = "~/vault/Documents/"
+      {
+        name = "Documents Vault",
+        path = "~/vault/"
+      }
     }
   }
 }

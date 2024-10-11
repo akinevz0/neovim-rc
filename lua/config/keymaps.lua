@@ -3,9 +3,11 @@
 -- Add any additional keymaps here
 local map = LazyVim.safe_keymap_set
 
-map({ "n", "i" }, "<C-q>", "K", {
+map({ "n", "i" }, "<C-q>", "<cmd>norm! K<cr>", {
   desc = "View help",
   silent = true,
 })
 
 map({ "n" }, "<C-a>", "A")
+map({ "i" }, "<C-a>", "<Esc>A")
+map({ "n" }, "<leader>go", "<cmd>ObsidianOpen<cr>")
